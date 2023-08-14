@@ -1,10 +1,9 @@
 <template>
   <div class="container">
     <div>
-      <NuxtLogo />
+      <TheHeader />
       <h1 class="title">trybe-futebol-club</h1>
       <h2 class="subtitle">Welcome to the View UI + Nuxt.js template</h2>
-      <NuxtLink to="/fun">Fun</NuxtLink>  
       <div class="links">
         <Button
           type="primary"
@@ -34,8 +33,11 @@
 </template>
 
 <script>
+import TheHeader from '~/components/TheHeader.vue';
+
 export default {
-  name: 'IndexPage',
+    name: 'IndexPage',
+    components: { TheHeader }
 }
 </script>
 
